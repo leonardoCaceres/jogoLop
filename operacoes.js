@@ -212,17 +212,17 @@ function escolhaOperacao()
       if(faseAtual <= 3)
       {
         passouDeFase.play();
+        acertos = 0;
+        tentativas = 0;
       }
-      acertos = 0;
-      tentativas = 0;
       contarTempo = false;
       gerarNovosDados = true;
     }
     else
     {
       somDerrota.play();
-      acertos = 0;
-      tentativas = 0;
+      //acertos = 0;
+      //tentativas = 0;
       faseAtual = 0;
       contarTempo = false;
       gerarNovosDados = true;
@@ -232,8 +232,8 @@ function escolhaOperacao()
     {
       somVitoria.play();
       fase = "vitoria";
-      acertos = 0;
-      tentativas = 0;
+      //acertos = 0;
+      //tentativas = 0;
       faseAtual = 0;
       //contarTempo = false;
       //gerarNovosDados = true;

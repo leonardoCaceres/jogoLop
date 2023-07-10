@@ -8,7 +8,7 @@ var inst = false;
 var cores = 5;
 var mudanca = 5;
 
-
+//menu
 var larguraDaTela = 1000;
 var alturaDaTela = 800;
 

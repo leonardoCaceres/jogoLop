@@ -1,10 +1,6 @@
 function visualizarInstrucoes()
 {
   tamanhoVoltar = verificaSeRetorna(); //Função presente em creditos.js
-  if(mouseX > 40 && mouseX < 140 && mouseY > 690 && mouseY < 770)
-  {
-      tamanhoVoltar = 80;
-  }
   textSize(40);
   textAlign('center');
   text("Instruções", larguraDaTela/2, alturaDaTela/4 - 60);

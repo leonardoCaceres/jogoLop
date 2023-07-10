@@ -84,11 +84,14 @@ function mouseReleased()
     if(mouseX > 40 && mouseX < 140 && mouseY > 690 && mouseY < 770)
     {
       fase = "menu";
+      acertos = 0;
+      tentativas = 0;
+      faseAtual = 0;
       gerarNovosDados = true;
       contarTempo = false;
     }
   }
-  if(fase == "instrucoes" || fase == "creditos" || fase == "gameOver" || fase == "gameOver")
+  if(fase == "instrucoes" || fase == "creditos" || fase == "gameOver" || fase == "vitoria")
   {
     if(mouseX > 40 && mouseX < 140 && mouseY > 690 && mouseY < 770)
     {
@@ -112,6 +115,10 @@ function menu()
 {
   fill(0); //pinta de preto
   textAlign('center');  //alinha a proxima frase para centro
+  
+  textSize(32);
+  text("QUIZ DE MATEMÁTICA", larguraDaTela/2, alturaDaTela/2 - 200);
+  
   if(mouseX > larguraDaTela/2 - 60 && mouseY > alturaDaTela/2 - 90 && mouseX < larguraDaTela/2 + 60 && mouseY < (alturaDaTela/2) - 40)
   {
     textSize(40);  //tamanho das letras 40 se estiver perto da palavra
@@ -139,7 +146,6 @@ function menu()
   {
     textSize(40);  //tamanho das letras 40 se estiver perto da palavra
     creditos = true;
-    //console.log("oi")
   }
   else
   {
